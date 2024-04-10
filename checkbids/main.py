@@ -21,7 +21,6 @@ def main():
     """Traverse a directory and print all non-bids compliant file paths."""
     args = parse_args()
     len_root = len(str(args.root))
-    print(len_root)
     validator = BIDSValidator()
     for dir_path, dir_names, file_names in os.walk(args.root):
         for file_name in file_names:
